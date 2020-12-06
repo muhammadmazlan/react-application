@@ -1,0 +1,6 @@
+.app-bar {
+    display: flex;
+    align-items: center;
+    padding: 2px 3px;
+    background-color: black;
+}

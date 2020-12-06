@@ -1,12 +1,6 @@
 import React from 'react';
-import AppLogo from '../AppLogo/AppLogo';
-import NavItem from '../NavItem/NavItem'
+import './AppBar.css';
 
-export default function AppBar() {
-    return (
-        <div>
-            <AppLogo />
-            <NavItem />
-        </div>
-    )
+export default function AppBar(props) {
+    return <div className="app-bar">{props.children}</div>;
 }
