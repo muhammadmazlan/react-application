@@ -4,6 +4,7 @@ import AppLogo from '../AppLogo/AppLogo';
 import NavItem from '../NavItem/NavItem';
 import LoginButton from '../LoginButton/LoginButton';
 import Clock from '../Clock/Clock';
+import Counter from '../Counter/Counter'
 import './Netflix.css';
 
 export default class Netflix extends Component {
@@ -19,6 +20,7 @@ export default class Netflix extends Component {
                 </AppBar> 
                 <main>
                      <Clock />
+                     <Counter />
                 </main>
             </div>
         )
