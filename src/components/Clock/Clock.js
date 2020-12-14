@@ -6,7 +6,8 @@ export default class Clock extends Component {
         this.state = {
             dateTime: new Date(),
         };
-
+    }
+    componentDidMount(){
         setInterval (() => {
             this.setState({
                 dateTime: new Date(),
