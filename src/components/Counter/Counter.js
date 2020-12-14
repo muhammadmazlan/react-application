@@ -29,7 +29,7 @@ export default class Counter extends Component {
     };
 
     minusToCounter(){
-        console.log('Minus COunter!!');
+        console.log('Minus Counter!!');
         this.decrementCounter();
     };
 
