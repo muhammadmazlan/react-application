@@ -4,4 +4,5 @@
 main {
    padding: 1rem 2rem;
    text-align: left;
+   overflow-x: hidden;
 }
