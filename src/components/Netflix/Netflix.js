@@ -5,11 +5,12 @@ import AppLogo from '../AppLogo/AppLogo';
 import NavItem from '../NavItem/NavItem';
 import LoginButton from '../LoginButton/LoginButton';
 import LogoutButton from '../LogoutButton/LogoutButton';
-import Clock from '../Clock/Clock';
-import Counter from '../Counter/Counter';
-import Todos from '../Todos/Todos';
+// import Clock from '../Clock/Clock';
+// import Counter from '../Counter/Counter';
+// import Todos from '../Todos/Todos';
 import PosterList from '../PosterList/PosterList';
-import originals from '../../assets/netflix-originals.json'
+import originals from '../../assets/netflix-originals.json';
+import Magazines from '../../routes/Magazines/Magazines';
 import './Netflix.css';
 
 export default class Netflix extends Component {
@@ -43,6 +44,7 @@ logoutUser = () => {
                     <AppLogo />
                     <NavLink className="nav-item" to="/">Home</NavLink>
                     <NavLink className="nav-item" to="/myList">My List</NavLink>
+                    <NavLink className="nav-item" to="/magazines">Magazines</NavLink>
                     <div className="extend" />
                     {button}
                 </AppBar> 
@@ -56,6 +58,10 @@ logoutUser = () => {
                         <Route path="/myList">
                             <p>My List</p>
                             {user}
+                        </Route>
+                        <Route path="/magazines">
+                            <p>Magazines</p>
+                            <Magazines />
                         </Route>
                     </Switch>
                                         
