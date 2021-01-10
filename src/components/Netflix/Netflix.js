@@ -11,6 +11,9 @@ import LogoutButton from '../LogoutButton/LogoutButton';
 import PosterList from '../PosterList/PosterList';
 import originals from '../../assets/netflix-originals.json';
 import Magazines from '../../routes/Magazines/Magazines';
+// import Home from '../../routes/Home/Home';
+// import MyList from '../../routes/MyList/MyList';
+import ShowsDetail from '../../routes/ShowsDetail/ShowsDetail';
 import './Netflix.css';
 
 export default class Netflix extends Component {
@@ -52,16 +55,21 @@ logoutUser = () => {
                     <Switch>
                         <Route path="/" exact>
                            <p>Home Page</p>
+                           {/* <Home /> */}
                            {user} 
-                           {poster}
+                            {poster} 
                         </Route>
-                        <Route path="/myList">
+                        <Route path="/myList" exact>
                             <p>My List</p>
+                            {/* <MyList /> */}
                             {user}
                         </Route>
-                        <Route path="/magazines">
+                        <Route path="/magazines" exact>
                             <p>Magazines</p>
                             <Magazines />
+                        </Route>
+                        <Route path="/shows/:id/:name?" exact>
+                            <ShowsDetail />
                         </Route>
                     </Switch>
                                         
